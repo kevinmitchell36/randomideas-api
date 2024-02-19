@@ -49,7 +49,7 @@ router.put('/:id', async (req, res) => {
       {
         $set: {
           text: req.body.text,
-          tag: req.body.tag
+          tag: req.body.tag,
         }
       },
       { new: true}
